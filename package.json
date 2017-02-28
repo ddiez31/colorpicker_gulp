@@ -24,8 +24,12 @@
         "gulp-csscomb": "latest",
         "gulp-csso": "latest",
         "gulp-less": "latest",
+        "gulp-livereload": "latest",
         "gulp-load-plugins": "latest",
+        "gulp-minify": "latest",
+        "gulp-plumber": "latest",
         "gulp-rename": "latest",
-        "gulp-sass": "latest"
+        "gulp-sass": "latest",
+        "gulp-uglify": "latest"
     }
 }
