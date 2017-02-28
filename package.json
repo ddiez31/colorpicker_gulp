@@ -1,0 +1,31 @@
+{
+    "name": "colorpicker_gulp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ddiez31/colorpicker_gulp.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ddiez31/colorpicker_gulp/issues"
+    },
+    "homepage": "https://github.com/ddiez31/colorpicker_gulp#readme",
+    "devDependencies": {
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-compass": "latest",
+        "gulp-cssbeautify": "latest",
+        "gulp-csscomb": "latest",
+        "gulp-csso": "latest",
+        "gulp-less": "latest",
+        "gulp-load-plugins": "latest",
+        "gulp-rename": "latest",
+        "gulp-sass": "latest"
+    }
+}
