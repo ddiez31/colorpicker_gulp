@@ -1,1 +1,0 @@
-input[type=range]{position:relative;margin-left:1em}input[type=range]:after,input[type=range]:before{position:absolute;top:1em;color:#000}input[type=range]:before{left:0;content:attr(min)}input[type=range]:after{right:0;content:attr(max)}.segment{height:100px;width:100px}.column{font-size:12px}#color1,#color2{box-shadow:2px 2px;border-radius:10px;border:2px solid #000}

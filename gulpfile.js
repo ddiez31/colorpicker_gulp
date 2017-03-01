@@ -25,22 +25,26 @@ gulp.task('minifycss', function() {
         .pipe(plugins.rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('minifyjs', function() {
     return gulp.src('js/*.js')
         .pipe(plugins.minify({
-            min: '.js'
+            ext: {
+                src: '-debug.js',
+                min: '.min.js'
+            },
+            exclude: ['tasks'],
+            ignoreFiles: ['.combo.js', '-min.js']
         }))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 
 gulp.task('default', ['compass', 'minifycss', 'minifyjs'], function() {
     return gulp.src('*.html')
-        // .pipe(plugins.uglify)
-        // .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {
