@@ -20,19 +20,13 @@
         "gulp": "latest",
         "gulp-autoprefixer": "latest",
         "gulp-compass": "latest",
-        "gulp-cssbeautify": "latest",
         "gulp-csscomb": "latest",
         "gulp-csso": "latest",
-        "gulp-htmlmin": "latest",
-        "gulp-less": "latest",
         "gulp-livereload": "latest",
         "gulp-load-plugins": "latest",
         "gulp-minify": "latest",
         "gulp-plumber": "latest",
         "gulp-rename": "latest",
-        "gulp-sass": "latest",
-        "gulp-uglify": "latest",
-        "gulp-uglifycss": "latest",
-        "gulp-useref": "latest"
+        "gulp-uglifycss": "latest"
     }
 }

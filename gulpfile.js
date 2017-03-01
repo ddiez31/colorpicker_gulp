@@ -25,16 +25,16 @@ gulp.task('minifycss', function() {
         .pipe(plugins.rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('uglifycss', function() {
-    gulp.src('dist/css/**/*.css')
+    gulp.src('css/**/*.css')
         .pipe(plugins.uglifycss({
             "maxLineLen": 80,
             "uglyComments": true
         }))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('minifyjs', function() {
@@ -47,18 +47,11 @@ gulp.task('minifyjs', function() {
             exclude: ['tasks'],
             ignoreFiles: ['.combo.js', '-min.js']
         }))
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('js'));
 });
 
 gulp.task('default', ['compass', 'minifycss', 'uglifycss', 'minifyjs'], function() {
-    return gulp.src('*.html')
-        .pipe(plugins.htmlmin({
-            collapseWhitespace: true
-        }))
-        .pipe(plugins.rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('watch', function() {
