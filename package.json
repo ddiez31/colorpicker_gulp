@@ -23,6 +23,7 @@
         "gulp-cssbeautify": "latest",
         "gulp-csscomb": "latest",
         "gulp-csso": "latest",
+        "gulp-htmlmin": "latest",
         "gulp-less": "latest",
         "gulp-livereload": "latest",
         "gulp-load-plugins": "latest",
@@ -31,6 +32,7 @@
         "gulp-rename": "latest",
         "gulp-sass": "latest",
         "gulp-uglify": "latest",
+        "gulp-uglifycss": "latest",
         "gulp-useref": "latest"
     }
 }
